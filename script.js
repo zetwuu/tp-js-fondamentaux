@@ -9,7 +9,7 @@ age = 18
 console.log(prenom, age)
 
 const motDePasseAttendu = "secret123";
-let motDePasseUtilisateur = "secret123";
+let motDePasseUtilisateur = "ljmm";
 
 if (motDePasseUtilisateur === motDePasseAttendu) {
     console.log("Accès autorisé. Bienvenue !");
@@ -22,11 +22,10 @@ if (motDePasseUtilisateur === motDePasseAttendu) {
 age = 16
 
 const moi = {
-    prenom: prenom,
+    prenom,
     nom: "Pinheiro",
-    age: age,
+    age,
     competences: ["HTML", "CSS", "JS"],
-    ville: "Lyon"
 };
 
 console.log(moi)
@@ -35,4 +34,5 @@ console.log(moi.prenom)
 console.log("Je m'appelle", moi.prenom, moi.nom, ", j'ai", moi.age, "ans", ", j'étudie :", moi.competences)
 
 moi.age = 19;
+moi.ville = "Lyon"
 console.log(moi)

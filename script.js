@@ -1,12 +1,12 @@
 console.log("Laboratoire prêt !");
 
-const nom = "Alexandre";
+const prenom = "Alexandre";
 let age = 16;
-//nom = "Didier" 
+//prenom = "Didier" 
 //script.js:5 Uncaught TypeError: Assignment to constant variable. at script.js:5:5
 
 age = 18
-console.log(nom, age)
+console.log(prenom, age)
 
 const motDePasseAttendu = "secret123";
 let motDePasseUtilisateur = "secret123";
@@ -18,3 +18,21 @@ if (motDePasseUtilisateur === motDePasseAttendu) {
 } else {
     console.log("Accès refusé. Mot de passe incorrect.");
 }
+
+age = 16
+
+const moi = {
+    prenom: prenom,
+    nom: "Pinheiro",
+    age: age,
+    competences: ["HTML", "CSS", "JS"],
+    ville: "Lyon"
+};
+
+console.log(moi)
+console.log(moi.prenom)
+
+console.log("Je m'appelle", moi.prenom, moi.nom, ", j'ai", moi.age, "ans", ", j'étudie :", moi.competences)
+
+moi.age = 19;
+console.log(moi)
